@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lankan Wildlife</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="main.js" defer></script>
+    <script src="t.js" defer></script>
+
+    <link rel="icon" type="image/png" href="images/logo1.png">
+        
+</head>
+<body>
+    <header>
+        Introduction to Sri Lankan Wildlife!
+        <img src="images/logo1.png" alt="sri lankan wildlife logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="department.html">Department of Wildlife Conservation</a></li>
+          <li><a href="leopard.html">Sri Lankan Leopard</a></li>
+          <li><a href="animals.html">Animals in Sri Lanka</a></li>
+          <div class="dropdown">
+            <button class="dropbutton">Our National Parks &#10549
+            </button>
+                <div class="dropdown-content">
+                <a href="yala.html">Yala National Park</a>
+                <a href="wilpattu.html">Wilpattu National Park</a>
+                </div>
+          </div> 
+          <li><button id="loginBtn" class="butt">Login</button>
+            <button id="logoutBtn" class="butt">Logout</button></li>
+    </ul>
+        </ul>
+      </nav>
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <div id="error" style="color: red; display: none;">Invalid username or password!</div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button id="submitBtn" class="butt">Login</button>
+        </div>
+    </div>
+    <div class="content">
+      <article>
+        
+        <!-- Location 1: Example -->
+        <div class="location">
+          <h2 id="page2H1"></h2>
+          <p id="page2H1P1"> </p>
+            <iframe class='maps' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15846.696154043711!2d80.8023333!3d6.
+            809446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20Nat
+            ional%20Park!5e0!3m2!1sen!2slk!4v1705471852674!5m2!1sen!2slk" width="500" height="400" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img src="images/horton1.jpg" alt="Hortons Plains National Park" class="endemics">
+        </div>
+
+        <!-- Location 2: Example -->
+        <div class="location">
+          <h2 id="page2H2"></h2>
+          <p id="page2H2P1">
+          </p>
+          <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.8991152230374!2d80.
+          45745167494701!3d6.406996124506322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd
+          109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1705522207447!5m2!1sen!2slk" 
+          width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img src="images/sinharaja1.jpg" alt="Sinharaja FForest reserve" class="endemics">
+
+
+        </div>
+
+        <div class="location">
+          <h2 id="page2H3"></h2>
+          <p id="page2H3P1">
+            
+          </p>
+          <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8378690196973!2d80.84209537495582!3d8.015649
+          604027493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb6009a20be05d%3A0xa4d046f2f06b05f5!2sMinneriya%20Na
+          tional%20Park!5e0!3m2!1sen!2slk!4v1705522098076!5m2!1sen!2slk" width="500" height="400" style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img src="images/minneriya1.jpg" alt="Minneriya National Park" class="endemics">
+
+
+
+          <table>
+            <tr>
+                <th><p>Animal Name</p></th>
+                <th><p>Fun Fact</p></th>
+                <th><p>Endemic to Sri Lanka</p></th>
+            </tr>
+            <tr>
+                <td><p>Purple-faced Langur </p></td>
+                <td><p>The purple-faced langur is a primate species known for its striking appearance with a purple 
+                  face and golden-brown fur. They live in social groups and are primarily leaf-eaters, playing a crucial 
+                  role in maintaining the ecological balance of the forests.</p></td>
+                <td><p>Yes &#10004;</p></td>
+            </tr>
+            <tr>
+                <td><p>Sri Lankan Elephant</p></td>
+                <td><p>The Sri Lankan elephant is the largest of the three recognized subspecies of the Asian elephant. 
+                  It is characterized by its smaller size, rounded ears, and relatively long trunk. These gentle giants 
+                  are highly revered in Sri Lankan culture.</p></td>
+                <td><p>No &#10006;</p></td>
+            </tr>
+            <tr>
+                <td><p>Red Slender Loris</p></td>
+                <td><p>The Horton Plains slender loris is a nocturnal primate with large eyes adapted for night vision.
+                  It is one of the smallest primates in the world and is known for its slow and deliberate movements. 
+                  This elusive species is found in the montane forests of Sri Lanka.</p></td>
+                <td><p>Yes &#10004;</p></td>
+            </tr>
+        </table>
+      </div>
+        
+      </article>
+
+
+
+      <footer style="text-align: center;">
+        <button id="editbtn">EDIT CONTENT</button>
+        <button id="saveBtn">CONFIRM EDIT</button>
+
+        <div id="newsletterRegistration">
+            <h3>Sign up for our newsletter</h3>
+            <form id="newsletterForm">
+                <input type="text" id="name" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    
+        <!-- Table to Display Registered Users -->
+        <!-- This will be populated dynamically for admins -->
+        <div id="registeredUsers" style="display: none;">
+            <h2>Registered Users for Newsletter</h2>
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <p>&copy; 2024 Sri Lanka's Official Wildlife Website. All rights reserved.</p>
+        <p>Developed by: Ahmed Nazeer</p>
+        <p>Contact:ahmednzr6@gmail.com</p>
+    </footer>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lankan Wildlife</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/png" href="images/logo1.png">
+        
+</head>
+<body>
+    <header>
+        Department of Wildlife Conservation
+        <img src="images/logo1.png" alt="sri lankan wildlife logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="department.html">Department of Wildlife Conservation</a></li>
+          <li><a href="leopard.html">Sri Lankan Leopard</a></li>
+          <li><a href="animals.html">Animals in Sri Lanka</a></li>
+            <div class="dropdown">
+                <button class="dropbutton">Our National Parks &#10549
+                </button>
+                    <div class="dropdown-content">
+                        <a href="yala.html">Yala National Park</a>
+                        <a href="wilpattu.html">Wilpattu National Park</a>
+                    </div>
+            </div> 
+            <li><button id="loginBtn" class="butt">Login</button>
+                <button id="logoutBtn" class="butt">Logout</button></li>
+        </ul>
+        </ul>
+      </nav>
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <div id="error" style="color: red; display: none;">Invalid username or password!</div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button id="submitBtn" class="butt">Login</button>
+        </div>
+    </div>
+    <div class="content">
+        <h2 id="page3H1"></h2>
+    <article>
+        <img src="images/department.jpeg" alt="Department of wildlife conservation logo" class="departmentlogo">
+
+        <p id="page3P1">
+        </p>
+
+        <h2 id="page3H2"></h2>
+
+        <ul>
+            <li><h3>Wildlife Protection- Enforcing rules and regulations that preserve wildlife, notably endangered species, from poaching, 
+                illegal trading, and other dangers.</h3></li>
+        
+            <li><h3>Habitat Conservation- National parks, animal sanctuaries, and other protected places are managed and conserved to maintain 
+                different ecosystems and provide habitat for a vast range of species.</h3></li>
+            <li><h3>Research and Monitoring-Conducting scientific research and monitoring programs to determine the status of animal populations, 
+                analyze their behavior, and collect data for conservation purposes</h3></li>
+            <li><h3>Community Engagement- Collaborating with local communities to foster sustainable cohabitation, develop conservation awareness, 
+                and involve them in animal preservation initiatives.</h3></li>
+            <li><h3>Tourism Management- Balancing animal protection with sustainable tourism, travelers can enjoy and appreciate Sri Lanka's 
+                natural beauty while reducing environmental effect.</h3></li>
+         
+        </ul>
+
+
+        <!-- Photo Grid -->
+<div class="row1"> 
+    <div class="column1">
+      <img src="images/ecosystem1.jpg" style="width:100%">
+      <img src="images/ecosystem2.jpeg" style="width:100%">
+      <img src="images/horton1.jpg" style="width:100%">
+      <img src="images/horton2.jpg" style="width:100%">
+      <img src="images/minneriya1.jpg" style="width:100%">
+      <img src="images/minneriya2.webp" style="width:100%">
+    </div>
+    
+    <div class="column1">
+      <img src="images/elephant.jpeg" style="width:100%">
+      <img src="images/leopard.jpg" style="width:100%">
+      <img src="images/slothbear.webp" style="width:100%">
+      
+    </div> 
+
+
+    </article>
+    </div>
+
+
+
+    <footer style="text-align: center;">
+        <button id="editBtn">EDIT CONTENT</button>
+        <button id="saveBtn">CONFIRM EDIT</button>
+
+        <div id="newsletterRegistration">
+            <h3>Sign up for our newsletter</h3>
+            <form id="newsletterForm">
+                <input type="text" id="name" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    
+        <!-- Table to Display Registered Users -->
+        <!-- This will be populated dynamically for admins -->
+        <div id="registeredUsers" style="display: none;">
+            <h2>Registered Users for Newsletter</h2>
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <p>&copy; 2024 Sri Lanka's Official Wildlife Website. All rights reserved.</p>
+        <p>Developed by: Ahmed Nazeer</p>
+        <p>Contact:ahmednzr6@gmail.com</p>
+    </footer>
+    
+    
+</body>
+</html>

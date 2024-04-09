@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Lankan Wildlife</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/png" href="images/logo1.png" />
+  </head>
+
+  <body>
+    <header>
+      Sri Lankan Fauna!
+      <img src="images/logo1.png" alt="sri lankan wildlife logo" class="logo" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li>
+          <a href="department.html">Department of Wildlife Conservation</a>
+        </li>
+        <li><a href="leopard.html">Sri Lankan Leopard</a></li>
+        <li><a href="animals.html">Animals in Sri Lanka</a></li>
+        <div class="dropdown">
+          <button class="dropbutton">Our National Parks &#10549;</button>
+          <div class="dropdown-content">
+            <a href="yala.html">Yala National Park</a>
+            <a href="wilpattu.html">Wilpattu National Park</a>
+          </div>
+        </div>
+        <li><button id="loginBtn" class="butt">Login</button>
+          <button id="logoutBtn" class="butt">Logout</button></li>
+  </ul>
+      </ul>
+    </nav>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+          <div id="error" style="color: red; display: none;">Invalid username or password!</div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button id="submitBtn" class="butt">Login</button>
+      </div>
+  </div>
+      <div class="content">
+        <article>
+          <h2 id="page5H1"></h2>
+    
+          <h3 id="page5H2"></h3>
+          <p id="page5H2P1"></p>
+
+          <h2 id="page5H3"></h2>
+          <h3 id="page5H4"></h3>
+          <p id="page5H4P1"></p>
+
+          <h3 id="page5H5"></h3>
+          <p id="page5H5P1"></p>
+
+          <h3 id="page5H6"></h3>
+          <p id="page5H6P1"></p>
+
+          <h3 id="page5H7"></h3>
+          <p id="page5H7P1"></p>
+
+          <h3 id="page5H8"></h3>
+          <p id="page5H8P1"></p>
+
+          <h3 id="page5H9"></h3>
+          <p id="page5H9P1"></p>
+
+          <h3 id="page5H10"></h3>
+          <p id="page5H10P1"></p>
+
+          <h3 id="page5H11"></h3>
+          <p id="page5H11P1"></p>
+
+          <h3 id="page5H12"></h3>
+          <p id="page5H12P1"></p>
+
+          <h3 id="page5H13"></h3>
+          <p id="page5H13P1"></p>
+
+          <h2 id="page5H14"></h2>
+
+          <div>
+            <a href="yala.html">
+              <div class="yalacard">
+                <img
+                  src="images/yalaupdated.webp"
+                  alt="Yala National Park"
+                  style="width: 100%"
+                  class="endemics"
+                />
+                <div class="container">
+                  <h4><b>Yala National Park</b></h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="wilpattu.html">
+              <div class="wilpattucard">
+                <img
+                  src="images/wilpattuupdated.jpg"
+                  alt="Wilpattu National Park"
+                  style="width: 100%"
+                  class="endemics"
+                />
+                <div class="container">
+                  <h4><b>Wilpattu National Park</b></h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <h3>
+              Most indigenous species of Sri Lanka can be found in these
+              national parks
+            </h3>
+          </div>
+        </article>
+      </div>
+    <footer style="text-align: center">
+      <button id="editBtn">EDIT CONTENT</button>
+      <button id="saveBtn">CONFIRM EDIT</button>
+
+      <div id="newsletterRegistration">
+          <h3>Sign up for our newsletter</h3>
+          <form id="newsletterForm">
+              <input type="text" id="name" placeholder="Username" required>
+              <input type="email" id="email" placeholder="Email" required>
+
+              <button type="submit">Register</button>
+          </form>
+      </div>
+  
+      <!-- Table to Display Registered Users -->
+      <!-- This will be populated dynamically for admins -->
+      <div id="registeredUsers" style="display: none;">
+          <h2>Registered Users for Newsletter</h2>
+          <table id="usersTable">
+              <thead>
+                  <tr>
+                      <th>Username</th>
+                      <th>Email</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- User rows will be inserted here -->
+              </tbody>
+          </table>
+      </div>
+      <p>
+        &copy; 2024 Sri Lanka's Official Wildlife Website. All rights reserved.
+      </p>
+      <p>Developed by: Ahmed Nazeer</p>
+      <p>Contact:ahmednzr6@gmail.com</p>
+    </footer>
+  </body>
+</html>

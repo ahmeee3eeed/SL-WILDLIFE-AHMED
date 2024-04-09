@@ -1,0 +1,382 @@
+
+/* Style the header */
+header {
+  
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  width: 80%;
+  font-family: monospace;
+  margin: auto;
+  font-weight: 900;
+  background-image: url(images/v1008-25-a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+/* style the logo*/
+.logo{
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/wildlife4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Additional styles to ensure the image covers the entire viewport */
+    height: 100vh; /* Set the height of the body to the viewport height */ 
+  }
+  /* Resetting default margin and padding for the list */
+    nav ul {
+        background-color: #CD9F6A;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        width: 100%;
+        margin: auto;
+    }
+    nav{
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        justify-content: space-evenly;
+        display: flex;
+        width: 100%;
+    }
+    
+    /* Styling the list items to display horizontally */
+    nav ul li {
+        border-right: 1px solid #bbb;
+        padding-right: 40px;
+        display: inline;
+        margin-right: 20px; /* Adjust as needed for spacing between items */
+        margin-left: 20px;
+    }
+    
+    /* Styling the anchor links */
+    nav ul li a {
+        text-decoration: none;
+        color: #000; /* Adjust the color as needed */
+        display: inline-block;
+        padding: 2px 2px;
+    }
+    .active {
+        background-color:red;
+    }
+    li a:hover:not(.active) {
+        background-color: #BF7340;
+      }
+        
+        .dropdown {
+            display: inline;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .dropdown .dropbutton {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 12px 12px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #CD9F6A;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        
+        top: 30px;
+        left: 0;
+        
+        
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #BF7340;
+      
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropbutton:hover{
+        background-color: #BF7340;
+        
+      }
+
+      .content{
+        grid-area: auto;
+        width: 80%;
+        margin: auto;
+        background-image: url(images/wallpaper2new.jpg);
+        border-radius: 10px 10px 10px 10px;
+      }
+      
+      p{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: large;
+
+
+      }
+
+      h2{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 50px;
+        font-size: 30px;
+        
+        padding: 0 20px;
+        background-color: #EF8210;
+      }
+      h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: 23px;
+      }
+      h4{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+      
+
+      .endemics{
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+      ul{
+        margin: auto;
+        padding-left: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-bottom: 10px;
+        list-style: none;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      } 
+      
+      .row{
+        clear: both;
+        display: table;
+        margin: auto;
+        padding-left: 25% ;
+      }
+      
+
+       
+.maps{
+  margin-left: 27.5%;
+}
+
+.departmentlogo{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section{
+  outline-style: double;
+  outline-color: #000;
+  outline-width: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+}
+
+.yalacard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  float: left;
+  border-radius: 5px; /* 5px rounded corners */
+  margin-left: 5%;
+}
+
+.yalacard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.wilpattucard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  float: right;
+  border-radius: 5px; /* 5px rounded corners */
+  margin-right: 5%;
+}
+
+.wilpattucard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+img {
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+footer{
+  background-color: #CD9F6A;
+}
+
+table{
+  border-style: double;
+  border-color: #000;
+  outline-width: 5px;
+  margin-top:20px ;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 30%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  flex: 25%;
+  max-width: 25%;
+  padding-left: 50%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 96%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+@media 
+
+
+
+
+
+
+(max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
